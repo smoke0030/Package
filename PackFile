@@ -1,0 +1,23 @@
+// swift-tools-version:5.6
+
+import PackageDescription
+
+let package = Package(
+    name: "AppsDataHelper",
+    platforms: [
+        .iOS(.v15)
+    ],
+    products: [
+        .library(
+            name: "AppsDataHelper",
+            targets: ["AppsDataHelper"]
+        ),
+    ],
+    targets: [
+        .binaryTarget(
+            name: "AppsDataHelper",
+            url: "https://github.com/smoke0030/AppsDataHelper/releases/download/1.0.5/AppsDataHelper.xcframework.zip",
+            checksum: "d8ab8712047fb924a0c5bd8950afa676e8f3311d3084a8809ebd70ed42e5c5fe"
+        )
+    ]
+)
